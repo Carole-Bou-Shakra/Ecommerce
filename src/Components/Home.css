@@ -1,0 +1,209 @@
+/* src/Components/Home.css */
+.home-container {
+    background-color: #1a3d25; /* Set the desired background color */
+    color: #ffffff; /* Set text color to white for better contrast */
+    padding: 20px; /* Optional: Add padding for spacing */
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+}
+  
+  /* src/Components/Home.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a3d25; /* Set a solid background color */
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .main-content {
+    margin-top: 60px; /* Add margin to the top of the main content to avoid overlap with the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #f5a623; /* Highlight color on hover */
+  }
+  
+  .cart-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
+  .main-content {
+    margin-top: 50px; /* Space between navbar and content */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shop-now-button,
+  .explore-button {
+    background-color: #f5a623; /* Button background color */
+    color:black;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 20px;; /* Optional rounded corners */
+    transition: background-color 0.3s;
+  }
+  
+  .shop-now-button:hover,
+  .explore-button:hover {
+    background-color: #e8a700; /* Darker shade on hover */
+  }
+  /* src/Components/Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the navbar and main content horizontally */
+  }
+  
+  .main-content-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 60px; /* Space below navbar */
+    padding: 20px; /* Padding for some spacing */
+  }
+  
+  .main-content {
+    max-width: 50%; /* Control the width of the text section */
+    margin-right: 20px; /* Space between text and image */
+    gap: 20px;
+  }
+  
+ /* src/Components/Home.css */
+
+.side-image {
+    width: 100%; /* Set width to control the size */
+    height: auto; /* Keep aspect ratio */
+    max-width: 45%; /* Optional: set a max width for larger screens */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image fills the container properly */
+    margin-left: auto; /* Push the image to the right */
+    margin-top: 8px; /* Add some space above the image */
+}
+
+  /* Add your existing styles for the navbar, buttons, etc. below */
+  @media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3em;
+  }
+
+  .navbar-links li {
+    margin: 0 10px;
+  }
+
+  .main-content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .main-content {
+    max-width: 80%; /* Increase text width */
+    margin-bottom: 20px; /* Space below text */
+  }
+
+  .side-image {
+    max-width: 80%; /* Make image smaller */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 10px;
+    flex-direction: column; /* Stack navbar links */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .main-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    max-width: 90%; /* Full-width content on mobile */
+    text-align: center; /* Center align text on mobile */
+  }
+
+  .side-image {
+    max-width: 90%; /* Full-width image on mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Reduce heading size */
+  }
+
+  p {
+    font-size: 1em; /* Reduce paragraph size */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .shop-now-button,
+  .explore-button {
+    width: 100%; /* Full-width buttons on mobile */
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+}
+  

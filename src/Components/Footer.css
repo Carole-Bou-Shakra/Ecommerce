@@ -1,0 +1,74 @@
+.footer {
+    background-color:  #1a3d25;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Allows the footer to be at the bottom of content */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1024px) {
+    .footer {
+      padding: 15px 0; /* Reduce padding on medium screens */
+    }
+  
+    .footer-links li {
+      margin: 0 10px; /* Reduce space between links */
+    }
+  }
+  
+  /* For smaller tablets and large phones */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 10px 0; /* Further reduce padding */
+    }
+  
+    .footer-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+    }
+  
+    .footer-links li {
+      margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px 0; /* Minimize padding on mobile */
+    }
+  
+    .footer-content {
+      padding: 0 10px; /* Adjust padding for smaller mobile devices */
+    }
+  
+    .footer-links a {
+      font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+  }

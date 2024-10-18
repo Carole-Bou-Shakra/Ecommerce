@@ -1,0 +1,108 @@
+.cart {
+    position: fixed; /* Make the cart fixed in the center of the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the cart horizontally and vertically */
+    width: 45%; /* Adjust the width of the cart */
+    max-height: 80vh; /* Allow the cart to take up 80% of the viewport height */
+    background-color: #3c5b4d;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    z-index: 1000; /* Ensure the cart is above other elements */
+    color: white;
+    align-items: center;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: -30px;
+  
+  }
+  
+  .cart-item-info {
+    flex-grow: 1;
+    color: white;
+  }
+  
+  .close-cart-button {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .close-cart-button:hover {
+    background-color: #e04d40; /* Darker shade for hover effect */
+  }
+  
+  /* New styles for the remove button */
+  .remove-cart-button {
+    background-color: #ff6347; /* Tomato color for the remove button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .remove-cart-button:hover {
+    background-color: #e04d40; /* Darker shade on hover for remove button */
+  }
+  @media (max-width: 1024px) {
+    .cart {
+      width: 60%; /* Make the cart wider for tablet-sized screens */
+    }
+  }
+  
+  /* For smaller tablets and phones */
+  @media (max-width: 768px) {
+    .cart {
+      width: 80%; /* Make the cart take up more width on smaller screens */
+    }
+  
+    .cart-item {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .cart-item-image {
+      width: 80px;
+      height: 80px; /* Make the images bigger on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .remove-cart-button {
+      margin-top: 15px; /* Adjust the spacing for the remove button */
+    }
+  }
+  
+  /* For very small screens (mobile phones) */
+  @media (max-width: 480px) {
+    .cart {
+      width: 95%; /* Use almost the full width of the screen */
+    }
+  
+    .close-cart-button, .remove-cart-button {
+      padding: 8px 10px; /* Reduce the padding on buttons */
+    }
+  
+    .cart-item-image {
+      width: 70px;
+      height: 70px; /* Slightly smaller image for very small screens */
+    }
+  }
+  
